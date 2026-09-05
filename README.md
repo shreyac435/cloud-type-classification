@@ -7,9 +7,9 @@ Atmospheric scientists rely on cloud classification to understand weather patter
 
 The repository features two distinct models:
 1. **Custom CNN Baseline**: A lightweight 3-block CNN trained from scratch.
-2. **Transfer Learning Model**: A robust `EfficientNetB3` model pre-trained on ImageNet.
+2. **Transfer Learning Model**: A robust `EfficientNetB0` model pre-trained on ImageNet.
 
-> **Note**: This codebase is designed as an educational debugging exercise. The Jupyter Notebook currently contains placeholders where 8 common machine learning bugs (dimension mismatches, data leakage, catastrophic forgetting, etc.) will be injected for debugging practice.
+
 
 ## Dataset
 The CCSN dataset contains 2,543 images categorized into the 11 WMO-defined cloud genera:
@@ -54,12 +54,12 @@ pip install -r requirements.txt
 ```
 
 ### Setup
-1. Download the dataset from Kaggle and extract it into a folder named `dataset/` in the root directory.
+1. Download the dataset from Google drive and extract it into a folder named `dataset/` in the root directory.
 2. Launch Jupyter Notebook or upload the `.ipynb` file to Google Colab.
 ```bash
 jupyter notebook
 ```
-3. Open and run `cloud_type_classification (1).ipynb`.
+3. Open and run `cloud_type_classification.ipynb`.
 
 ## Tech Stack
 - **TensorFlow / Keras**: Model building, augmentation, and training
